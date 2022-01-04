@@ -1,5 +1,54 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 450px;
+}
+
+#display{
+    width: 100px;
+    align-self: center;
+    background-color: #70A988;
+    color: black;
+}
+
 .numbers{
+    
     display: grid;
     grid-template-columns: repeat(3, 20px);
     grid-template-rows: repeat(3, 20px);
+    align-self: center;
+}
+
+.number{
+    
+    background: #C9DEE1;
+    color: #010B0F;
+}
+
+.operators{
+    display: grid;
+    grid-template-columns: repeat(1, 20px);
+    align-self: flex-end;
+}
+
+.operator{
+    background-color: #1B4B88;
+    color: #D3DCE8;
+}
+
+.equals{
+    background-color: #CF6A36;
+    align-self: flex-end;
+}
+
+.clear{
+    background-color: #CF6A36;
+    align-self: flex-end;
 }
