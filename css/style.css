@@ -1,54 +1,57 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.container{
+    background-color: grey;
+    width: 120px;
+    border: solid black 1px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 450px;
-}
 
 #display{
+    background-color: green;
+    border: solid 1px black;
     width: 100px;
     align-self: center;
-    background-color: #70A988;
-    color: black;
 }
 
 .numbers{
-    
     display: grid;
-    grid-template-columns: repeat(3, 20px);
     grid-template-rows: repeat(3, 20px);
-    align-self: center;
+    grid-template-columns: repeat(3, 20px);
+    grid-gap: 2px;
+    width: 80px;
 }
 
-.number{
-    
-    background: #C9DEE1;
-    color: #010B0F;
+.zero{
+    margin-left: 22px;
+    padding-right: 12px;
 }
 
 .operators{
-    display: grid;
-    grid-template-columns: repeat(1, 20px);
-    align-self: flex-end;
+    margin-top: -93px;
+    margin-left: 80px;
+    width: 20px;
 }
 
 .operator{
-    background-color: #1B4B88;
-    color: #D3DCE8;
+    color: white;
+    border: solid black 1px;
+    background-color: #4B73AB;
+}
+
+.number{
+    background-color: #C5DFDE;
+    border: solid black 1px;
 }
 
 .equals{
-    background-color: #CF6A36;
-    align-self: flex-end;
+    color: white;
+    background-color: #4B73AB;
+    margin: 10px;
+    border: solid black 1px;
 }
 
 .clear{
-    background-color: #CF6A36;
-    align-self: flex-end;
+    color: white;
+    background-color: rgb(173, 138, 72);
+    border: solid black 1px;
 }
+
